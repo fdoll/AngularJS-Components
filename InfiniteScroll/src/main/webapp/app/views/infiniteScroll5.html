@@ -1,0 +1,12 @@
+<div ng-controller="infScroll5Ctrl">
+    <h1>Angular Infinite Scroll Demo 5</h1>
+
+  <div infinite-scroll="loadMore()" >
+  <div>
+    <ul>
+      <li ng-repeat="movie in movies track by $index"><h1>{{movie}}</h1></li>
+      <li ng-repeat="image in images track by $index"><img ng-src="{{image}}"></li>
+    </ul>
+  </div>
+  </div>
+</div>

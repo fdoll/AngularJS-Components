@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html ng-app="infiniteScrollApp">
+<head>
+<meta charset="ISO-8859-1">
+<title>AngularJS Research - Powered by Hexacta</title>
+
+<!--  sheets -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+<link href="css/datatables/demo_page.css" rel="stylesheet"
+	type="text/css" />
+<link href="css/datatables/demo_table.css" rel="stylesheet"
+	type="text/css" />
+<link href="css/datatables/demo_table_jui.css" rel="stylesheet"
+	type="text/css" />
+<link type="text/css" href="css/datatables/jquery.dataTables.css"
+	rel="stylesheet" />
+<link type="text/css" href="css/jquery-ui.css" rel="stylesheet" />
+<link type="text/css"
+	href="css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+<link href="css/site.css" rel="stylesheet" type="text/css" />
+
+<!-- End Style sheets -->
+
+<!-- Javascript -->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-route.min.js"></script>
+<script src="js/angular-animate.min.js"></script>
+<script src="js/angular-touch.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/ui-bootstrap-tpls-0.11.0.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript" src="js/infinite-scroll.js"></script>
+<script type="text/javascript" src="js/infiniteScroll.js"></script>
+<script type="text/javascript" src="app/app.js"></script>
+<script type="text/javascript" src="app/controller/infinite-scrollCtrl.js"></script>
+<script type="text/javascript" src="app/controller/infiniteScrollCtrl.js"></script>
+<script type="text/javascript" src="js/ngInfiniteScroll.js"></script>
+<script type="text/javascript" src="app/controller/infiniteScroll4Ctrl.js"></script>
+<script type="text/javascript" src="js/infiniteScroll4.js"></script>
+<script type="text/javascript" src="js/infScroll5.js"></script>
+<script type="text/javascript" src="app/controller/ngInfiniteScrollCtrl.js"></script>
+<script type="text/javascript" src="app/controller/infiniteScroll5Ctrl.js"></script>
+
+<!-- End Javascript -->
+
+</head>
+<body class="contaniner">
+	<div class="col-md-12">
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span> 
+						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Hexacta AngularJS Research </a>
+				</div>
+				<div class="collapse navbar-collapse"  ng-controller="HeaderController" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li ng-class="{ active: isActive('/')}"><a href="#">InfiniteScroll1 - ION</a></li>
+						<li ng-class="{ active: isActive('/infscroll2')}"><a href="#/infscroll2">InfiniteScroll2</a></li>
+						<li ng-class="{ active: isActive('/infscroll3')}"><a href="#/infscroll3">InfiniteScroll3</a></li>
+						<li ng-class="{ active: isActive('/infscroll4')}"><a href="#/infscroll4">InfiniteScroll4</a></li>
+						<li ng-class="{ active: isActive('/infscroll5')}"><a href="#/infscroll5">InfiniteScroll5</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown"><a href="#" class="dropdown-toggle"
+							data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span><span
+								class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#"><span class="glyphicon glyphicon-minus"></span>
+										Accion 1</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-plus"></span>
+										Accion 2</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-cog"></span>
+										Opciones</a></li>
+								<li class="divider"></li>
+								<li><a href="#"><span class="glyphicon glyphicon glyphicon-log-out"></span>
+										Salir</a></li>
+							</ul>
+						</li>
+					</ul>
+			</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<hr />
+	</div>
+
+	<div class="container" ng-view></div>
+
+</body>
+
+		<footer id="footer">
+	        <div class="container">
+	    	    <div class="row">
+    	    		<div class="col-md-4">&copy; 2014</div>
+	    	    	<div style="padding-left:100px;" class="col-md-4">
+   				         <ul class="nav nav-pills">
+              				<li class="active"><a href="#">About Us</a></li>
+				            <li><a href="#">Privacy Policy</a></li>
+           				 </ul>
+			          </div>
+     	  			<div class="col-md-4">
+    			        <h4 class="text-right">Hexacta AngularJS Research Team</h4>
+      		    	</div>
+        		</div>
+        	</div>
+      </footer>
+
+</html>

@@ -1,0 +1,10 @@
+<div ng-controller="infScrollCtrl2">
+    <h1>Angular Infinite Scroll Demo 2 </h1>
+	<div infinite-scroll='loadMore()' infinite-scroll-distance='0'>
+		<div ng-repeat='image in images'>
+			<br>
+			<img ng-src='http://placehold.it/800x300/880000&text={{image}}'>
+    		<br>
+    	</div>
+  </div>
+</div>

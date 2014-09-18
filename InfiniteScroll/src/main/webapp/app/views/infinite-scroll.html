@@ -1,0 +1,20 @@
+<section id="infScroll3Page">
+<div ng-controller="infScrollCtrl3">
+
+    <h1>Angular Infinite Scroll Demo 3</h1>
+
+    <p>Maximum {{maxItems}} items
+        <small>({{items.length}} added) </small>
+        <button ng-click="items=[];canLoad=true;addItems();" class="btn">Reset</button>
+    </p>
+    
+    <div scroll-infinite="addItems()" can-load="canLoad" threshold="300">
+       <div ng-repeat="item in items">
+    	   	<br>
+			<img ng-src='http://placehold.it/800x300/000088&text={{item}}'>
+    		<br>
+    	</div>
+    </div>
+
+</div>
+</section>
