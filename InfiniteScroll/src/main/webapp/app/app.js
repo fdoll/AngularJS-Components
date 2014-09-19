@@ -1,4 +1,4 @@
-var infiniteScrollApp = angular.module('infiniteScrollApp', ['ngRoute', 'ionInfiniteScroll', 'infinite-scroll','infiniteScroll2', 'scroll-infinite', 'infScroll5', 'ionScroll', 'ui.bootstrap']);
+var infiniteScrollApp = angular.module('infiniteScrollApp', ['ngRoute', 'ionInfiniteScroll', 'infinite-scroll','lrInfiniteScroll', 'scroll-infinite', 'infScroll5', 'ionScroll', 'ui.bootstrap']);
 
 infiniteScrollApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
 	$routeProvider.
